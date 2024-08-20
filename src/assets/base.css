@@ -85,8 +85,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.TrackedItem {
+
+}
+
+.ItemPrize {
+  width: 175px;
+  float: left;
+  border: 1px #000 solid;
+}
+
 .EnemyPool {
-  clear: left;
+  float: left;
+  width: 250px;
+  border: 1px #000 solid;
+}
+
+.EnemyPool .title {
+  font-weight: bold;
 }
 
 .clear {
@@ -94,12 +110,118 @@ body {
 }
 
 .icon {
-  background-image: url(sprites.png);  
-  transform: scale(2);
+  background-image: url(sprites.png);
+  scale: 1;
   float: left;
-  margin-right: 25px;
+  margin-right: 5px;
+  margin-bottom: 10px;
 }
 
+.GreenRupee {
+  width: 16px;
+  height: 16px;
+  background-position: -351px -5px;
+}
+
+.BlueRupee {
+  width: 16px;
+  height: 16px;
+  background-position: -351px -23px;
+}
+
+.RedRupee {
+  width: 16px;
+  height: 16px;
+  background-position: -351px -43px;
+}
+
+.Heart {
+  width: 8px;
+  height: 7px;
+  background-position: -394px -8px;
+}
+
+.FullMagic {
+  width: 8px;
+  height: 15px;
+  background-position: -373px -23px;
+}
+
+.SmallMagic {
+  width: 8px;
+  height: 8px;
+  background-position: -373px -8px;
+}
+
+.Fairy {
+  width: 16px;
+  height: 16px;
+  background-position: -389px -22px;
+}
+
+.OneBomb {
+  width: 14px;
+  height: 15px;
+  background-position: -414px -4px;
+}
+
+.FourBombs {
+  width: 14px;
+  height: 15px;
+  background-position: -414px -24px;
+}
+
+.EightBombs {
+  width: 14px;
+  height: 15px;
+  background-position: -414px -43px;
+}
+
+.FiveArrows {
+  width: 10px;
+  height: 16px;
+  background-position: -444px -4px;
+}
+
+.TenArrows {
+  width: 10px;
+  height: 16px;
+  background-position: -443px -23px;
+}
+/*********************/
+
+.Fish {
+  width: 15px;
+  height: 9px;
+  background-position: -471px -6px;
+}
+
+.BushCrab {
+  width: 16px;
+  height: 21px;
+  background-position: -471px -29px;
+}
+/*********************/
+
+.BlueBoomerang {
+  width: 8px;
+  height: 12px;
+  background-position: -465px -62px;
+}
+
+.RedBoomerang {
+  width: 8px;
+  height: 12px;
+  background-position: -481px -62px;
+}
+
+.Hookshot {
+  width: 7px;
+  height: 16px;
+  background-position: -497px -60px;
+}
+
+/*********************/
 .BlueSwordGuard {
   width: 22px;
   height: 33px;
@@ -169,7 +291,7 @@ body {
 .RedSpearShieldGuard {
   width: 23px;
   height: 32px;
-  background-position: -102px 0px;
+  background-position: -75px 1px;
 }
 
 .RedTarous {
@@ -201,4 +323,363 @@ body {
   height: 24px;
   background-position: -23px -37px;
 }
+/***************/
+.BallAndChainGuard {
+  width: 26px;
+  height: 25px;
+  background-position: -199px -85px;
+}
 
+.BlueDevalant {
+  width: 32px;
+  height: 32px;
+  background-position: -107px -123px;
+}
+
+.BlueTektite {
+  width: 28px;
+  height: 16px;
+  background-position: -45px -116px;
+}
+
+.Buzz {
+  width: 16px;
+  height: 16px;
+  background-position: -1px -118px;
+}
+
+.Geldman {
+  width: 41px;
+  height: 16px;
+  background-position: -143px -89px;
+}
+
+.Hover {
+  width: 16px;
+  height: 14px;
+  background-position: -233px -89px;
+}
+
+.Kyune {
+  width: 16px;
+  height: 16px;
+  background-position: -82px -118px;
+}
+
+.MiniMoldorm {
+  width: 23px;
+  height: 27px;
+  background-position: -194px -118px;
+}
+
+.Octorok {
+  width: 16px;
+  height: 17px;
+  background-position: -171px -122px;
+}
+
+.Pikit {
+  width: 16px;
+  height: 16px;
+  background-position: -146px -123px;
+}
+
+.Popo {
+  width: 16px;
+  height: 16px;
+  background-position: -23px -119px;
+}
+
+.Rat {
+  width: 15px;
+  height: 16px;
+  background-position: -1px -90px;
+}
+
+.RedDevalant {
+  width: 32px;
+  height: 32px;
+  background-position: -107px -85px;
+}
+
+.RedHardhatBeetle {
+  width: 16px;
+  height: 21px;
+  background-position: -80px -88px;
+}
+
+.RedTektite {
+  width: 28px;
+  height: 16px;
+  background-position: -45px -88px;
+}
+
+.Ropa {
+  width: 16px;
+  height: 21px;
+  background-position: -21px -87px;
+}
+
+.Terrorpin {
+  width: 16px;
+  height: 16px;
+  background-position: -226px -125px;
+}
+/*************************************/
+.Buzzblob {
+  width: 12px;
+  height: 20px;
+  background-position: -431px -79px;
+}
+
+.Gibdo {
+  width: 16px;
+  height: 24px;
+  background-position: -402px -76px;
+}
+
+.Pengator {
+  width: 16px;
+  height: 24px;
+  background-position: -376px -76px;
+}
+
+.RedSpearGuard {
+  width: 21px;
+  height: 23px;
+  background-position: -345px -77px;
+}
+/*************************************/
+.BombGuard {
+  width: 27px;
+  height: 31px;
+  background-position: -525px -113px;
+}
+
+.FloatingStal {
+  width: 12px;
+  height: 14px;
+  background-position: -503px -117px;
+}
+
+.Hinox {
+  width: 33px;
+  height: 32px;
+  background-position: -459px -112px;
+}
+
+.Ku {
+  width: 16px;
+  height: 16px;
+  background-position: -432px -115px;
+}
+
+.Sluggula {
+  width: 14px;
+  height: 16px;
+  background-position: -405px -115px;
+}
+
+.StalfosKnight {
+  width: 24px;
+  height: 36px;
+  background-position: -368px -111px;
+}
+
+.Zora {
+  width: 16px;
+  height: 21px;
+  background-position: -347px -115px;
+}
+/*************************************/
+.ArmosStatue {
+  width: 16px;
+  height: 31px;
+  background-position: -94px -176px;
+}
+
+.BlueArcher {
+  width: 22px;
+  height: 27px;
+  background-position: -61px -195px;
+}
+
+.GreenArcher {
+  width: 18px;
+  height: 28px;
+  background-position: -64px -167px;
+}
+
+.GreenEyegore {
+  width: 24px;
+  height: 23px;
+  background-position: -30px -192px;
+}
+
+.GreenMimic {
+  width: 22px;
+  height: 23px;
+  background-position: -3px -193px;
+}
+
+.RedEyegore {
+  width: 24px;
+  height: 23px;
+  background-position: -30px -167px;
+}
+
+.RedMimic {
+  width: 22px;
+  height: 23px;
+  background-position: -2px -167px;
+}
+/*************************************/
+.BlueBari {
+  width: 14px;
+  height: 15px;
+  background-position: -433px -180px;
+}
+
+.BlueHardhatBeetle {
+  width: 16px;
+  height: 21px;
+  background-position: -412px -179px;
+}
+
+.BlueStalfos {
+  width: 16px;
+  height: 25px;
+  background-position: -392px -179px;
+}
+
+.BlueZazak {
+  width: 21px;
+  height: 24px;
+  background-position: -368px -179px;
+}
+
+.Crow {
+  width: 16px;
+  height: 16px;
+  background-position: -348px -179px;
+}
+
+.GreenKodongo {
+  width: 16px;
+  height: 16px;
+  background-position: -326px -180px;
+}
+
+.GreenSlime {
+  width: 12px;
+  height: 14px;
+  background-position: -307px -178px;
+}
+
+.Poe {
+  width: 16px;
+  height: 16px;
+  background-position: -288px -179px;
+}
+
+.RedBari {
+  width: 14px;
+  height: 15px;
+  background-position: -269px -179px;
+}
+
+.RedKodongo {
+  width: 16px;
+  height: 16px;
+  background-position: -246px -178px;
+}
+
+.RedSlime {
+  width: 12px;
+  height: 14px;
+  background-position: -228px -179px;
+}
+
+.RedStalfos {
+  width: 16px;
+  height: 25px;
+  background-position: -206px -177px;
+}
+
+.RedZazak {
+  width: 21px;
+  height: 24px;
+  background-position: -182px -178px;
+}
+
+.Vulture {
+  width: 24px;
+  height: 13px;
+  background-position: -153px -179px;
+}
+
+.YellowSlime {
+  width: 12px;
+  height: 14px;
+  background-position: -131px -179px;
+}
+/*************************************/
+.BlueZirro {
+  width: 18px;
+  height: 16px;
+  background-position: -655px -176px;
+}
+
+.BluesainBolt {
+  width: 21px;
+  height: 23px;
+  background-position: -676px -175px;
+}
+
+.Keese {
+  width: 12px;
+  height: 14px;
+  background-position: -638px -177px;
+}
+
+.Lynel {
+  width: 22px;
+  height: 25px;
+  background-position: -609px -174px;
+}
+
+.MiniHelmasaur {
+  width: 16px;
+  height: 15px;
+  background-position: -588px -174px;
+}
+
+.Pokey {
+  width: 14px;
+  height: 39px;
+  background-position: -569px -174px;
+}
+
+.RedBushSpearGuard {
+  width: 22px;
+  height: 28px;
+  background-position: -542px -174px;
+}
+
+.SnapDragon {
+  width: 23px;
+  height: 15px;
+  background-position: -515px -175px;
+}
+
+.Stalrope {
+  width: 15px;
+  height: 16px;
+  background-position: -493px -176px;
+}
+
+.YellowStalfos {
+  width: 16px;
+  height: 24px;
+  background-position: -468px -175px;
+}

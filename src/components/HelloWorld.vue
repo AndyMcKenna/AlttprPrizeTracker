@@ -8,7 +8,7 @@ defineProps<{
   <div class="greetings">
     <h1 class="green">{{ msg }}</h1>
     <h3>
-      Track the prize packs, stun prize, tree pulls, and fish prize.
+      Track the prize packs, stun prize, bush crab, tree pulls, and fish prize.
     </h3>
   </div>
 </template>
@@ -28,12 +28,5 @@ h3 {
 .greetings h1,
 .greetings h3 {
   text-align: center;
-}
-
-@media (min-width: 1024px) {
-  .greetings h1,
-  .greetings h3 {
-    text-align: left;
-  }
 }
 </style>
