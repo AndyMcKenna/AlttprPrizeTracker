@@ -1,3 +1,3 @@
 <template>
-<div class="icon SmallMagic"></div>
+<div class="icon SmallMagic Selectable"></div>
 </template>

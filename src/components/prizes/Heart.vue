@@ -1,3 +1,3 @@
 <template>
-<div class="icon Heart"></div>
+<div class="icon Heart Selectable"></div>
 </template>

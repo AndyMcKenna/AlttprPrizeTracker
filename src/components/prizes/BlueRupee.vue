@@ -1,3 +1,3 @@
 <template>
-<div class="icon BlueRupee"></div>
+<div class="icon BlueRupee Selectable"></div>
 </template>

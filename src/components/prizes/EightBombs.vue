@@ -1,3 +1,3 @@
 <template>
-<div class="icon EightBombs"></div>
+<div class="icon EightBombs Selectable"></div>
 </template>

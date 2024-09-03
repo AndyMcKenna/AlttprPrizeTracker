@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
+import { usePrizeStore } from '@/stores/prize';
+
+const store = usePrizeStore();
 </script>
 
 <template>
   <main>
-
     <div class="TrackedItem">
       <div class="EnemyPool TwoLines">
         <div class="icon BlueSwordGuard"></div>
@@ -28,7 +29,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon Toppo"></div>
       </div>
       <div class="ItemPrize TwoLines Selectable">
-        <BlueRupeePack />
+        <component :is="store.pools[0]"></component>
       </div>
     </div>
 
@@ -54,14 +55,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon Terrorpin"></div>
       </div>      
       <div class="ItemPrize TwoLines Selectable">
-        <div class="icon FourBombs"></div>
-        <div class="icon EightBombs"></div>
-        <div class="icon FiveArrows"></div>
-        <div class="icon TenArrows"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
+        <component :is="store.pools[1]"></component>
       </div>
     </div>
 
@@ -73,14 +67,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon RedSpearGuard"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
+        <component :is="store.pools[2]"></component>
       </div>
     </div>
 
@@ -95,14 +82,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon Zora"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
+        <component :is="store.pools[3]"></component>
       </div>
     </div>
 
@@ -117,14 +97,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon RedMimic"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
+        <component :is="store.pools[4]"></component>
       </div>
     </div>
 
@@ -148,14 +121,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon Vulture"></div>
       </div>
       <div class="ItemPrize TwoLines Selectable">
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
+        <component :is="store.pools[5]"></component>
       </div>
     </div>
 
@@ -174,14 +140,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon YellowStalfos"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
+        <component :is="store.pools[6]"></component>
       </div>
     </div>
 
@@ -190,9 +149,9 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon Tree"></div>
       </div>
       <div class="ItemPrize OneLine">
-        <div class="icon Question"></div>
-        <div class="icon Question"></div>
-        <div class="icon Question"></div>
+        <component :is="store.tree[0]"></component>
+        <component :is="store.tree[1]"></component>
+        <component :is="store.tree[2]"></component>
       </div>
     </div>
 
@@ -203,7 +162,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon Hookshot"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <div class="icon Question"></div>
+        <component :is="store.stun"></component>
       </div>
     </div>
     
@@ -212,8 +171,8 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon BushCrab"></div>
       </div>
       <div class="ItemPrize OneLine">
-        <div class="icon Question"></div>
-        <div class="icon Question"></div>
+        <component :is="store.bush[0]"></component>
+        <component :is="store.bush[1]"></component>
       </div>
     </div>
 
@@ -222,7 +181,7 @@ import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
         <div class="icon Fish"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <div class="icon Question"></div>
+        <component :is="store.fish"></component>
       </div>
     </div>
   </main>
