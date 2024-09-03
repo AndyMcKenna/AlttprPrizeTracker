@@ -1,22 +1,12 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
   <main>
 
     <div class="TrackedItem">
-      <div class="ItemPrize">
-        <div class="icon GreenRupee"></div>
-        <div class="icon BlueRupee"></div>
-        <div class="icon RedRupee"></div>
-        <div class="icon SmallMagic"></div>
-        <div class="icon FullMagic"></div>
-        <div class="icon Fairy"></div>
-        <div class="icon Heart"></div>
-        <div class="icon OneBomb"></div>
-      </div>
-      <div class="EnemyPool">
-        <div class="title">Prize Pack 1</div>
+      <div class="EnemyPool TwoLines">
         <div class="icon BlueSwordGuard"></div>
         <div class="icon GreenSwordGuard"></div>
         <div class="icon BlueTarosu"></div>
@@ -37,21 +27,20 @@
         <div class="icon Snake"></div>
         <div class="icon Toppo"></div>
       </div>
+      <div class="ItemPrize TwoLines Selectable">
+        <div class="icon GreenRupee"></div>
+        <div class="icon BlueRupee"></div>
+        <div class="icon RedRupee"></div>
+        <div class="icon SmallMagic"></div>
+        <div class="icon FullMagic"></div>
+        <div class="icon Fairy"></div>
+        <div class="icon Heart"></div>
+        <div class="icon OneBomb"></div>
+      </div>
     </div>
 
     <div class="TrackedItem">
-      <div class="ItemPrize">
-        <div class="icon FourBombs"></div>
-        <div class="icon EightBombs"></div>
-        <div class="icon FiveArrows"></div>
-        <div class="icon TenArrows"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-      </div>
-      <div class="EnemyPool">
-        <div class="title">Prize Pack 2</div>
+      <div class="EnemyPool TwoLines">
         <div class="icon BallAndChainGuard"></div>
         <div class="icon BlueDevalant"></div>
         <div class="icon RedDevalant"></div>
@@ -70,31 +59,27 @@
         <div class="icon BlueTektite"></div>
         <div class="icon RedTektite"></div>
         <div class="icon Terrorpin"></div>
+      </div>      
+      <div class="ItemPrize TwoLines Selectable">
+        <div class="icon FourBombs"></div>
+        <div class="icon EightBombs"></div>
+        <div class="icon FiveArrows"></div>
+        <div class="icon TenArrows"></div>
+        <div class="icon GreenRupee"></div>
+        <div class="icon GreenRupee"></div>
+        <div class="icon GreenRupee"></div>
+        <div class="icon GreenRupee"></div>
       </div>
     </div>
 
     <div class="TrackedItem">
-      <div class="ItemPrize">
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-        <div class="icon GreenRupee"></div>
-      </div>
-      <div class="EnemyPool">
-        <div class="title">Prize Pack 3</div>
+      <div class="EnemyPool OneLine">
         <div class="icon Buzzblob"></div>
         <div class="icon Gibdo"></div>
         <div class="icon Pengator"></div>
         <div class="icon RedSpearGuard"></div>
       </div>
-    </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
+      <div class="ItemPrize OneLine Selectable">
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
@@ -104,8 +89,10 @@
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
       </div>
-      <div class="EnemyPool">
-        <div class="title">Prize Pack 4</div>
+    </div>
+
+    <div class="TrackedItem">
+      <div class="EnemyPool OneLine">
         <div class="icon BombGuard"></div>
         <div class="icon Hinox"></div>
         <div class="icon StalfosKnight"></div>
@@ -114,10 +101,7 @@
         <div class="icon Sluggula"></div>
         <div class="icon Zora"></div>
       </div>
-    </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
+      <div class="ItemPrize OneLine Selectable">
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
@@ -127,8 +111,10 @@
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
       </div>
-      <div class="EnemyPool">
-        <div class="title">Prize Pack 5</div>
+    </div>
+
+    <div class="TrackedItem">
+      <div class="EnemyPool OneLine">
         <div class="icon ArmosStatue"></div>
         <div class="icon BlueArcher"></div>
         <div class="icon GreenArcher"></div>
@@ -137,10 +123,7 @@
         <div class="icon RedEyegore"></div>
         <div class="icon RedMimic"></div>
       </div>
-    </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
+      <div class="ItemPrize OneLine Selectable">
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
@@ -150,8 +133,10 @@
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
       </div>
-      <div class="EnemyPool">
-        <div class="title">Prize Pack 6</div>
+    </div>
+
+    <div class="TrackedItem">
+      <div class="EnemyPool TwoLines">
         <div class="icon BlueHardhatBeetle"></div>
         <div class="icon BlueStalfos"></div>
         <div class="icon RedStalfos"></div>
@@ -161,18 +146,15 @@
         <div class="icon Poe"></div>
         <div class="icon GreenKodongo"></div>
         <div class="icon RedKodongo"></div>
-        <div class="clear"></div>
         <div class="icon BlueBari"></div>
-        <div class="icon RedBari"></div>
+        <div class="icon RedBari"></div>        
+        <div class="clear"></div>
         <div class="icon GreenSlime"></div>
         <div class="icon RedSlime"></div>
         <div class="icon YellowSlime"></div>
         <div class="icon Vulture"></div>
       </div>
-    </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
+      <div class="ItemPrize TwoLines Selectable">
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
@@ -182,8 +164,10 @@
         <div class="icon GreenRupee"></div>
         <div class="icon GreenRupee"></div>
       </div>
-      <div class="EnemyPool">
-        <div class="title">Prize Pack 7</div>
+    </div>
+
+    <div class="TrackedItem">
+      <div class="EnemyPool OneLine">
         <div class="icon BlueZirro"></div>
         <div class="icon BluesainBolt"></div>
         <div class="icon FloatingStal"></div>
@@ -196,77 +180,56 @@
         <div class="icon Stalrope"></div>
         <div class="icon YellowStalfos"></div>
       </div>
-    </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
+      <div class="ItemPrize OneLine Selectable">
         <div class="icon GreenRupee"></div>
-      </div>
-      <div class="EnemyPool">
-        <div class="title">Bush Crab Tier 1</div>
-        <div class="icon BushCrab"></div>
-      </div>
-    </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
         <div class="icon GreenRupee"></div>
-      </div>
-      <div class="EnemyPool">
-        <div class="title">Bush Crab Tier 2</div>
-        <div class="icon BushCrab"></div>
+        <div class="icon GreenRupee"></div>
+        <div class="icon GreenRupee"></div>
+        <div class="icon GreenRupee"></div>
+        <div class="icon GreenRupee"></div>
+        <div class="icon GreenRupee"></div>
+        <div class="icon GreenRupee"></div>
       </div>
     </div>
 
-    <div class="TrackedItem">
-      <div class="ItemPrize">
-        <div class="icon GreenRupee"></div>
+    <div class="TrackedItem Smaller">
+      <div class="EnemyPool OneLine">
+        <div class="icon Tree"></div>
       </div>
-      <div class="EnemyPool">
-        <div class="title">Stun Prize</div>
+      <div class="ItemPrize OneLine">
+        <div class="icon Question"></div>
+        <div class="icon Question"></div>
+        <div class="icon Question"></div>
+      </div>
+    </div>
+
+    <div class="TrackedItem Smaller">
+      <div class="EnemyPool OneLine">
         <div class="icon BlueBoomerang"></div>
         <div class="icon RedBoomerang"></div>
         <div class="icon Hookshot"></div>
       </div>
-    </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
-        <div class="icon GreenRupee"></div>
-      </div>
-      <div class="EnemyPool">
-        <div class="title">Tree Pull Tier 1</div>
-        <div class="icon Fish"></div>
+      <div class="ItemPrize OneLine Selectable">
+        <div class="icon Question"></div>
       </div>
     </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
-        <div class="icon GreenRupee"></div>
+    
+    <div class="TrackedItem Smaller">
+      <div class="EnemyPool OneLine">
+        <div class="icon BushCrab"></div>
       </div>
-      <div class="EnemyPool">
-        <div class="title">Tree Pull Tier 2</div>
-        <div class="icon Fish"></div>
+      <div class="ItemPrize OneLine">
+        <div class="icon Question"></div>
+        <div class="icon Question"></div>
       </div>
     </div>
 
-    <div class="TrackedItem">
-      <div class="ItemPrize">
-        <div class="icon GreenRupee"></div>
-      </div>
-      <div class="EnemyPool">
-        <div class="title">Tree Pull Tier 3</div>
+    <div class="TrackedItem Smaller">
+      <div class="EnemyPool OneLine">
         <div class="icon Fish"></div>
       </div>
-    </div>
-
-    <div class="TrackedItem">
-      <div class="ItemPrize">
-        <div class="icon GreenRupee"></div>
-      </div>
-      <div class="EnemyPool">
-        <div class="title">Fish Prize</div>
-        <div class="icon Fish"></div>
+      <div class="ItemPrize OneLine Selectable">
+        <div class="icon Question"></div>
       </div>
     </div>
   </main>

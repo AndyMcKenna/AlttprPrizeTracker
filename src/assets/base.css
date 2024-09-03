@@ -23,15 +23,15 @@
 
 /* semantic color variables for this project */
 :root {
-  --color-background: var(--vt-c-white);
-  --color-background-soft: var(--vt-c-white-soft);
-  --color-background-mute: var(--vt-c-white-mute);
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
 
-  --color-border: var(--vt-c-divider-light-2);
-  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
 
-  --color-heading: var(--vt-c-text-light-1);
-  --color-text: var(--vt-c-text-light-1);
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-1);
 
   --section-gap: 160px;
 }
@@ -90,15 +90,52 @@ body {
 }
 
 .ItemPrize {
-  width: 175px;
+  width: 85px;
   float: left;
-  border: 1px #000 solid;
+  text-align:center;
+  border: 1px rgba(84, 84, 84, 0.65) solid;
+}
+
+.Smaller .ItemPrize {
+ width: 75px;
+}
+
+/* Fake (pseudo) element, that enables vertical-align */
+.ItemPrize:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.Selectable:hover {
+  cursor: pointer;
+}
+
+.OneLine {
+  height: 47px;
+}
+/* Fake (pseudo) element, that enables vertical-align */
+.OneLine:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.TwoLines {
+  height: 70px;
 }
 
 .EnemyPool {
   float: left;
-  width: 250px;
-  border: 1px #000 solid;
+  text-align:center;
+  width: 215px;
+  border: 1px rgba(84, 84, 84, 0.65) solid;
+}
+
+.Smaller .EnemyPool {
+  width: 75px;
 }
 
 .EnemyPool .title {
@@ -112,25 +149,29 @@ body {
 .icon {
   background-image: url(sprites.png);
   scale: 1;
-  float: left;
-  margin-right: 5px;
-  margin-bottom: 10px;
+  display:inline-block;
+}
+
+.Question {
+  width: 16px;
+  height: 16px;
+  background-position: -501px 0px;
 }
 
 .GreenRupee {
-  width: 16px;
+  width: 8px;
   height: 16px;
   background-position: -351px -5px;
 }
 
 .BlueRupee {
-  width: 16px;
+  width: 8px;
   height: 16px;
   background-position: -351px -23px;
 }
 
 .RedRupee {
-  width: 16px;
+  width: 8px;
   height: 16px;
   background-position: -351px -43px;
 }
@@ -200,6 +241,12 @@ body {
   width: 16px;
   height: 21px;
   background-position: -471px -29px;
+}
+
+.Tree {
+  width: 32px;
+  height: 40px;
+  background-position: -525px -25px;
 }
 /*********************/
 
