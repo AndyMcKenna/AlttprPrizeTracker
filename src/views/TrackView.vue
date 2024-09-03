@@ -1,5 +1,5 @@
 <script setup lang="ts">
-
+import BlueRupeePack from '@/components/prizes/packs/BlueRupeePack.vue';
 </script>
 
 <template>
@@ -28,14 +28,7 @@
         <div class="icon Toppo"></div>
       </div>
       <div class="ItemPrize TwoLines Selectable">
-        <div class="icon GreenRupee"></div>
-        <div class="icon BlueRupee"></div>
-        <div class="icon RedRupee"></div>
-        <div class="icon SmallMagic"></div>
-        <div class="icon FullMagic"></div>
-        <div class="icon Fairy"></div>
-        <div class="icon Heart"></div>
-        <div class="icon OneBomb"></div>
+        <BlueRupeePack />
       </div>
     </div>
 
