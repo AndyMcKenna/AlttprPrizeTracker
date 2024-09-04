@@ -1,10 +1,17 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
+import router from './router/index'
 import HelloWorld from './components/HelloWorld.vue'
+
+function startTracking() {
+  console.log(router);
+  const routeData = router.resolve({name: 'track'});
+  window.open(routeData.href, '_blank', 'popup,width=430,height=620');
+}
 </script>
 
 <template>
-  <header>
+  <header v-if="$route.name != 'track'">
     <img alt="Vue logo" class="logo" src="@/assets/link_too_many_items.jpg" width="200" />
 
     <div class="wrapper">
@@ -13,7 +20,7 @@ import HelloWorld from './components/HelloWorld.vue'
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>        
-        <RouterLink to="/track">Track</RouterLink>
+        <a @click="startTracking()" href="#">Track</a>
       </nav>
     </div>
   </header>

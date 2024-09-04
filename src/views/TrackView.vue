@@ -1,5 +1,4 @@
 <template>
-  <main>
     <div class="TrackedItem">
       <div class="EnemyPool TwoLines">
         <div class="icon BlueSwordGuard"></div>
@@ -185,7 +184,6 @@
         <component :is="store.fish" stateProperty="fish"></component>
       </div>
     </div>
-  </main>
 </template>
 
 <script setup lang="ts">
@@ -193,3 +191,9 @@ import { usePrizeStore } from '@/stores/prize';
 
 const store = usePrizeStore();
 </script>
+
+<style>
+#app {
+  padding: 2px;
+}
+</style>

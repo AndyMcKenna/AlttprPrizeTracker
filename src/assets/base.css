@@ -196,7 +196,7 @@ body {
 .PrizePackModal {
   position: fixed;
   z-index: 999;
-  top: 20%;
+  top: 10%;
   left: 50%;
   width: 212px;
   margin-left: -110px;
