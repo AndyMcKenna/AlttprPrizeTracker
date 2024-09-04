@@ -1,5 +1,5 @@
 <template>
-<div class="icon FiveArrows Selectable" @click="openModal = true"></div>
+<div class="icon FullMagic Selectable" @click="openModal = true"></div>
 <PrizeModal :open="openModal" :stateProperty="stateProperty" :propertyIndex="propertyIndex" />
 </template>
 

@@ -149,9 +149,9 @@ const store = usePrizeStore();
         <div class="icon Tree"></div>
       </div>
       <div class="ItemPrize OneLine">
-        <component :is="store.tree[0]"></component>
-        <component :is="store.tree[1]"></component>
-        <component :is="store.tree[2]"></component>
+        <component :is="store.tree[0]" stateProperty="tree" propertyIndex="0"></component>
+        <component :is="store.tree[1]" stateProperty="tree" propertyIndex="1"></component>
+        <component :is="store.tree[2]" stateProperty="tree" propertyIndex="2"></component>
       </div>
     </div>
 
@@ -162,7 +162,7 @@ const store = usePrizeStore();
         <div class="icon Hookshot"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <component :is="store.stun"></component>
+        <component :is="store.stun" stateProperty="stun"></component>
       </div>
     </div>
     
@@ -171,8 +171,8 @@ const store = usePrizeStore();
         <div class="icon BushCrab"></div>
       </div>
       <div class="ItemPrize OneLine">
-        <component :is="store.bush[0]"></component>
-        <component :is="store.bush[1]"></component>
+        <component :is="store.bush[0]" stateProperty="bush" propertyIndex="0"></component>
+        <component :is="store.bush[1]" stateProperty="bush" propertyIndex="1"></component>
       </div>
     </div>
 
@@ -181,7 +181,7 @@ const store = usePrizeStore();
         <div class="icon Fish"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <component :is="store.fish"></component>
+        <component :is="store.fish" stateProperty="fish"></component>
       </div>
     </div>
   </main>

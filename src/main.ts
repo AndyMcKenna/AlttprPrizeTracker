@@ -20,6 +20,7 @@ import EightBombs from './components/prizes/EightBombs.vue'
 import Fairy from './components/prizes/Fairy.vue'
 import FiveArrows from './components/prizes/FiveArrows.vue'
 import FourBombs from './components/prizes/FourBombs.vue'
+import FullMagic from './components/prizes/FullMagic.vue'
 import GreenRupee from './components/prizes/GreenRupee.vue'
 import Heart from './components/prizes/Heart.vue'
 import Question from './components/prizes/Question.vue'
@@ -27,6 +28,8 @@ import RedRupee from './components/prizes/RedRupee.vue'
 import SingleBomb from './components/prizes/SingleBomb.vue'
 import SmallMagic from './components/prizes/SmallMagic.vue'
 import TenArrows from './components/prizes/TenArrows.vue'
+
+import PrizeModal from './components/prizes/PrizeModal.vue'
 
 const app = createApp(App)
 
@@ -43,6 +46,7 @@ app.component('BlueRupeePack', BlueRupeePack)
    .component('Fairy', Fairy)
    .component('FiveArrows', FiveArrows)
    .component('FourBombs', FourBombs)
+   .component('FullMagic', FullMagic)
    .component('GreenRupee', GreenRupee)
    .component('Heart', Heart)
    .component('Question', Question)
@@ -50,6 +54,7 @@ app.component('BlueRupeePack', BlueRupeePack)
    .component('SingleBomb', SingleBomb)
    .component('SmallMagic', SmallMagic)
    .component('TenArrows', TenArrows)
+   .component('PrizeModal', PrizeModal)
 
 app.use(createPinia())
 app.use(router)

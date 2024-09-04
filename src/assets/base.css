@@ -152,6 +152,43 @@ body {
   display:inline-block;
 }
 
+.PrizeModal {
+  position: fixed;
+  z-index: 999;
+  top: 20%;
+  left: 50%;
+  width: 182px;
+  margin-left: -110px;
+  background-color: #000;
+  border: 1px #ff0000 solid;
+}
+
+.PrizeModal .Item {
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  text-align: center;
+  border: 1px rgba(84, 84, 84, 0.65) solid;
+}
+
+/* Fake (pseudo) element, that enables vertical-align */
+.PrizeModal .Item:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.PrizeModal .Item:hover {
+  border: 1px rgba(206, 202, 202, 0.65) solid;
+  cursor: pointer;
+}
+
+.PrizeModal .icon {
+  scale: 1.5;
+  margin-top: 15px;
+}
+
 .Question {
   width: 16px;
   height: 16px;

@@ -3,11 +3,11 @@ import { defineStore } from 'pinia'
 
 export const usePrizeStore = defineStore('prize', {
   state: () => ({
-    pools: ['QuestionPack', 'QuestionPack', 'QuestionPack', 'QuestionPack', 'QuestionPack', 'QuestionPack', 'QuestionPack'],
-    tree: ['Question', 'Question', 'Question'],
-    stun: 'Question',
-    bush: ['Question', 'Question'],
-    fish: 'Question'
+    pools: ['QuestionPack', 'QuestionPack', 'QuestionPack', 'QuestionPack', 'QuestionPack', 'QuestionPack', 'QuestionPack'] as String[],
+    tree: ['Question', 'Question', 'Question'] as String[],
+    stun: 'Question' as String,
+    bush: ['Question', 'Question'] as String[],
+    fish: 'Question' as String
   }),
   actions: {
     
