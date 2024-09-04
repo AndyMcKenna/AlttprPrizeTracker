@@ -86,18 +86,22 @@ body {
 }
 
 .TrackedItem {
- width: 300px;
+ width: 340px;
+}
+
+.TrackedItem.Smaller .icon {
+  margin-right: 5px;
 }
 
 .ItemPrize {
-  width: 85px;
+  width: 125px;
   float: left;
   text-align:center;
   border: 1px rgba(84, 84, 84, 0.65) solid;
 }
 
 .Smaller .ItemPrize {
- width: 75px;
+ width: 85px;
 }
 
 /* Fake (pseudo) element, that enables vertical-align */
@@ -135,7 +139,7 @@ body {
 }
 
 .Smaller .EnemyPool {
-  width: 75px;
+  width: 85px;
 }
 
 .EnemyPool .title {
@@ -187,6 +191,44 @@ body {
 .PrizeModal .icon {
   scale: 1.5;
   margin-top: 15px;
+}
+
+.PrizePackModal {
+  position: fixed;
+  z-index: 999;
+  top: 20%;
+  left: 50%;
+  width: 212px;
+  margin-left: -110px;
+  background-color: #000;
+  border: 1px #ff0000 solid;
+}
+
+.PrizePackModal .Item {
+  width: 210px;
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  border: 1px rgba(84, 84, 84, 0.65) solid;
+}
+
+/* Fake (pseudo) element, that enables vertical-align */
+.PrizePackModal .Item:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.PrizePackModal .Item:hover {
+  border: 1px rgba(206, 202, 202, 0.65) solid;
+  cursor: pointer;
+}
+
+.PrizePackModal .icon {
+  scale: 1.5;
+  margin-top: 15px;
+  margin-right: 10px;
 }
 
 .Question {

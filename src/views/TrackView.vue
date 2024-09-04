@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import { usePrizeStore } from '@/stores/prize';
-
-const store = usePrizeStore();
-</script>
-
 <template>
   <main>
     <div class="TrackedItem">
@@ -27,10 +21,11 @@ const store = usePrizeStore();
         <div class="icon QuakeSlime"></div>
         <div class="icon Snake"></div>
         <div class="icon Toppo"></div>
-      </div>
-      <div class="ItemPrize TwoLines Selectable">
+      </div>      
+      <div class="ItemPrize TwoLines Selectable" @click="store.openPrizePackModal(0)">
         <component :is="store.pools[0]"></component>
-      </div>
+      </div>      
+      <PrizePackModal :propertyIndex="Number(0)" />
     </div>
 
     <div class="TrackedItem">
@@ -54,9 +49,10 @@ const store = usePrizeStore();
         <div class="icon RedTektite"></div>
         <div class="icon Terrorpin"></div>
       </div>      
-      <div class="ItemPrize TwoLines Selectable">
+      <div class="ItemPrize TwoLines Selectable" @click="store.openPrizePackModal(1)">
         <component :is="store.pools[1]"></component>
       </div>
+      <PrizePackModal :propertyIndex="Number(1)" />
     </div>
 
     <div class="TrackedItem">
@@ -66,9 +62,10 @@ const store = usePrizeStore();
         <div class="icon Pengator"></div>
         <div class="icon RedSpearGuard"></div>
       </div>
-      <div class="ItemPrize OneLine Selectable">
+      <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(2)">
         <component :is="store.pools[2]"></component>
       </div>
+      <PrizePackModal :propertyIndex="Number(2)" />
     </div>
 
     <div class="TrackedItem">
@@ -81,9 +78,10 @@ const store = usePrizeStore();
         <div class="icon Sluggula"></div>
         <div class="icon Zora"></div>
       </div>
-      <div class="ItemPrize OneLine Selectable">
+      <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(3)">
         <component :is="store.pools[3]"></component>
       </div>
+      <PrizePackModal :propertyIndex="Number(3)" />
     </div>
 
     <div class="TrackedItem">
@@ -96,9 +94,10 @@ const store = usePrizeStore();
         <div class="icon RedEyegore"></div>
         <div class="icon RedMimic"></div>
       </div>
-      <div class="ItemPrize OneLine Selectable">
+      <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(4)">
         <component :is="store.pools[4]"></component>
       </div>
+      <PrizePackModal :propertyIndex="Number(4)" />
     </div>
 
     <div class="TrackedItem">
@@ -120,9 +119,10 @@ const store = usePrizeStore();
         <div class="icon YellowSlime"></div>
         <div class="icon Vulture"></div>
       </div>
-      <div class="ItemPrize TwoLines Selectable">
+      <div class="ItemPrize TwoLines Selectable" @click="store.openPrizePackModal(5)">
         <component :is="store.pools[5]"></component>
       </div>
+      <PrizePackModal :propertyIndex="Number(5)" />
     </div>
 
     <div class="TrackedItem">
@@ -139,9 +139,10 @@ const store = usePrizeStore();
         <div class="icon Stalrope"></div>
         <div class="icon YellowStalfos"></div>
       </div>
-      <div class="ItemPrize OneLine Selectable">
+      <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(6)">
         <component :is="store.pools[6]"></component>
       </div>
+      <PrizePackModal :propertyIndex="Number(6)" />
     </div>
 
     <div class="TrackedItem Smaller">
@@ -149,9 +150,9 @@ const store = usePrizeStore();
         <div class="icon Tree"></div>
       </div>
       <div class="ItemPrize OneLine">
-        <component :is="store.tree[0]" stateProperty="tree" propertyIndex="0"></component>
-        <component :is="store.tree[1]" stateProperty="tree" propertyIndex="1"></component>
-        <component :is="store.tree[2]" stateProperty="tree" propertyIndex="2"></component>
+        <component :is="store.tree[0]" stateProperty="tree" :propertyIndex="Number(0)"></component>
+        <component :is="store.tree[1]" stateProperty="tree" :propertyIndex="Number(1)"></component>
+        <component :is="store.tree[2]" stateProperty="tree" :propertyIndex="Number(2)"></component>
       </div>
     </div>
 
@@ -171,8 +172,8 @@ const store = usePrizeStore();
         <div class="icon BushCrab"></div>
       </div>
       <div class="ItemPrize OneLine">
-        <component :is="store.bush[0]" stateProperty="bush" propertyIndex="0"></component>
-        <component :is="store.bush[1]" stateProperty="bush" propertyIndex="1"></component>
+        <component :is="store.bush[0]" stateProperty="bush" :propertyIndex="Number(0)"></component>
+        <component :is="store.bush[1]" stateProperty="bush" :propertyIndex="Number(1)"></component>
       </div>
     </div>
 
@@ -186,3 +187,9 @@ const store = usePrizeStore();
     </div>
   </main>
 </template>
+
+<script setup lang="ts">
+import { usePrizeStore } from '@/stores/prize';
+
+const store = usePrizeStore();
+</script>

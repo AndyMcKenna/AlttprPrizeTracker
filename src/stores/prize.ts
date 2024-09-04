@@ -7,9 +7,13 @@ export const usePrizeStore = defineStore('prize', {
     tree: ['Question', 'Question', 'Question'] as String[],
     stun: 'Question' as String,
     bush: ['Question', 'Question'] as String[],
-    fish: 'Question' as String
+    fish: 'Question' as String,
+    prizePackModalIsOpen: [false, false, false, false, false, false, false] as Boolean[]
   }),
   actions: {
-    
+    openPrizePackModal(index: Number)
+    {
+      this.prizePackModalIsOpen[index] = true;
+    }
   }
 })

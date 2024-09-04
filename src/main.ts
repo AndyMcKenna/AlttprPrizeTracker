@@ -30,6 +30,7 @@ import SmallMagic from './components/prizes/SmallMagic.vue'
 import TenArrows from './components/prizes/TenArrows.vue'
 
 import PrizeModal from './components/prizes/PrizeModal.vue'
+import PrizePackModal from './components/prizes/packs/PrizePackModal.vue'
 
 const app = createApp(App)
 
@@ -55,6 +56,7 @@ app.component('BlueRupeePack', BlueRupeePack)
    .component('SmallMagic', SmallMagic)
    .component('TenArrows', TenArrows)
    .component('PrizeModal', PrizeModal)
+   .component('PrizePackModal', PrizePackModal)
 
 app.use(createPinia())
 app.use(router)
