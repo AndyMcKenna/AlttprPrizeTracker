@@ -11,7 +11,7 @@ export const usePrizeStore = defineStore('prize', {
     prizePackModalIsOpen: [false, false, false, false, false, false, false] as Boolean[]
   }),
   actions: {
-    openPrizePackModal(index: Number)
+    openPrizePackModal(index: number)
     {
       this.prizePackModalIsOpen[index] = true;
     }
