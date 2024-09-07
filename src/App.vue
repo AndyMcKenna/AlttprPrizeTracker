@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
 import router from './router/index'
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
 
 function startTracking() {
   console.log(router);
@@ -15,7 +15,7 @@ function startTracking() {
     <img alt="Vue logo" class="logo" src="@/assets/link_too_many_items.jpg" width="200" />
 
     <div class="wrapper">
-      <HelloWorld msg="ALTTPR Prize Pack Tracker" />
+      <Header msg="ALTTPR Prize Pack Tracker" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
