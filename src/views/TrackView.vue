@@ -187,6 +187,7 @@
 import { usePrizeStore } from '@/stores/prize';
 
 const store = usePrizeStore();
+document.title = "Prize Tracker";
 </script>
 
 <style>
