@@ -10,7 +10,6 @@
         <div class="icon GreenSpearGuard"></div>
         <div class="icon SkeletalWizzrobe"></div>
         <div class="icon Wizzrobe"></div>
-        <div class="clear"></div>
         <div class="icon GreenLeever"></div>
         <div class="icon BushStal"></div>
         <div class="icon Crab"></div>
@@ -36,7 +35,6 @@
         <div class="icon RedHardhatBeetle"></div>
         <div class="icon Ropa"></div>
         <div class="icon Geldman"></div>
-        <div class="clear"></div>
         <div class="icon Buzz"></div>
         <div class="icon Hover"></div>
         <div class="icon Kyune"></div>
@@ -111,8 +109,7 @@
         <div class="icon GreenKodongo"></div>
         <div class="icon RedKodongo"></div>
         <div class="icon BlueBari"></div>
-        <div class="icon RedBari"></div>        
-        <div class="clear"></div>
+        <div class="icon RedBari"></div>
         <div class="icon GreenSlime"></div>
         <div class="icon RedSlime"></div>
         <div class="icon YellowSlime"></div>
@@ -194,6 +191,9 @@ const store = usePrizeStore();
 
 <style>
 #app {
-  padding: 2px;
+  margin: 0;
+  padding: 0;
 }
+
+body{ overflow-x:hidden;overflow-y:hidden; }
 </style>

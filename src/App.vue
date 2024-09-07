@@ -6,7 +6,7 @@ import HelloWorld from './components/HelloWorld.vue'
 function startTracking() {
   console.log(router);
   const routeData = router.resolve({name: 'track'});
-  window.open(routeData.href, '_blank', 'popup,width=430,height=620');
+  window.open(routeData.href, '_blank', 'popup,width=480,height=700');
 }
 </script>
 
