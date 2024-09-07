@@ -10,6 +10,7 @@
         <li>Add the frozen hammer icon to pool #3 along with a hover tooltip</li>
         <li>Indicate that pool 4 drops prizes 100% of the time instead of 50% like the rest</li>
         <li>Add tooltips to Floating Stal, Keese, and Toppo to explain their restrictions</li>
+        <li>Click on the tree to get a popup of all available locations</li>
       </ul>
       <h3>9/7/24</h3>
       <ul>

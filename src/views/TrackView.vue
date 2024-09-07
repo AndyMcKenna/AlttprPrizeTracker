@@ -145,7 +145,7 @@
 
     <div class="TrackedItem Smaller">
       <div class="EnemyPool OneLine">
-        <div class="icon Tree"></div>
+        <div class="icon Tree" @click="viewTreeGuide()" title="View Tree Pull Locations"></div>
       </div>
       <div class="ItemPrize OneLine">
         <component :is="store.tree[0]" stateProperty="tree" :propertyIndex="Number(0)"></component>
@@ -187,9 +187,15 @@
 
 <script setup lang="ts">
 import { usePrizeStore } from '@/stores/prize';
+import router from '../router/index'
 
 const store = usePrizeStore();
 document.title = "Prize Tracker";
+
+function viewTreeGuide() {
+  const routeData = router.resolve({name: 'tree'});
+  window.open(routeData.href, '_blank', 'popup,width=1215,height=870');
+}
 </script>
 
 <style>
