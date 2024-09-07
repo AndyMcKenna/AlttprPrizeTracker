@@ -18,7 +18,7 @@
         <div class="icon PurpleLeever"></div>
         <div class="icon QuakeSlime"></div>
         <div class="icon Snake"></div>
-        <div class="icon Toppo"></div>
+        <div class="icon Toppo" title="Prize only given after talking to them after destroying the grass underneath"></div>
       </div>      
       <div class="ItemPrize TwoLines Selectable" @click="store.openPrizePackModal(0)">
         <component :is="store.pools[0]"></component>
@@ -58,6 +58,7 @@
         <div class="icon Gibdo"></div>
         <div class="icon Pengator"></div>
         <div class="icon RedSpearGuard"></div>
+        <div class="icon FrozenHammer" title="Any enemy frozen and then hammered will count towards this pack and have a drop rate of 100%"></div>
       </div>
       <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(2)">
         <component :is="store.pools[2]"></component>
@@ -71,9 +72,10 @@
         <div class="icon Hinox"></div>
         <div class="icon StalfosKnight"></div>
         <div class="icon Ku"></div>
-        <div class="icon FloatingStal"></div>
+        <div class="icon FloatingStal" title="Only in the light world"></div>
         <div class="icon Sluggula"></div>
         <div class="icon Zora"></div>
+        <div class="DropRate">100%</div>
       </div>
       <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(3)">
         <component :is="store.pools[3]"></component>
@@ -125,8 +127,8 @@
       <div class="EnemyPool OneLine">
         <div class="icon BlueZirro"></div>
         <div class="icon BluesainBolt"></div>
-        <div class="icon FloatingStal"></div>
-        <div class="icon Keese"></div>
+        <div class="icon FloatingStal" title="Only in the dark world"></div>
+        <div class="icon Keese" title="Only in the dark world"></div>
         <div class="icon Lynel"></div>
         <div class="icon MiniHelmasaur"></div>
         <div class="icon Pokey"></div>

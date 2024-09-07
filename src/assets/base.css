@@ -138,6 +138,7 @@ body {
 
 .EnemyPool {
   float: left;
+  position: relative;
   text-align:center;
   width: 290px;
   border: 1px rgba(84, 84, 84, 0.65) solid;
@@ -146,6 +147,16 @@ body {
 .EnemyPool .icon {
   margin-top: 9px;
   margin-right: 7px;
+}
+
+.EnemyPool .DropRate {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  background-color: #056805;
+  color: #fff;
+  width: 40px;
+  font-weight: bold;
 }
 
 .Smaller .EnemyPool {
@@ -357,6 +368,14 @@ body {
   background-position: -497px -60px;
 }
 
+.FrozenHammer {
+  width: 16px;
+  height: 16px;
+  background-position: -464px -80px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
 /*********************/
 .BlueSwordGuard {
   width: 22px;
@@ -452,6 +471,7 @@ body {
   width: 16px;
   height: 16px;
   background-position: -160px -40px;
+  cursor: pointer;
 }
 
 .Wizzrobe {
@@ -596,6 +616,7 @@ body {
   width: 12px;
   height: 14px;
   background-position: -503px -117px;
+  cursor: pointer;
 }
 
 .Hinox {
@@ -776,6 +797,7 @@ body {
   width: 12px;
   height: 14px;
   background-position: -638px -177px;
+  cursor: pointer;
 }
 
 .Lynel {
