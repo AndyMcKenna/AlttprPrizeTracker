@@ -63,4 +63,17 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
+
+#app {
+  margin: 0;
+  padding: 20px;
+}
+
+main {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+body{ overflow-x:auto;overflow-y:auto; }
 </style>
