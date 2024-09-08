@@ -195,7 +195,7 @@ document.title = "Prize Tracker";
 
 function viewTreeGuide() {
   const routeData = router.resolve({name: 'tree'});
-  window.open(routeData.href, '_blank', 'popup,width=1215,height=870');
+  window.open(routeData.href, '_blank', 'popup,width=1215,height=900');
 }
 </script>
 

@@ -2,10 +2,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
-import BootstrapVue3 from 'bootstrap-vue-3';
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
 import './assets/main.css'
 
 import App from './App.vue'
@@ -37,7 +33,25 @@ import TenArrows from './components/prizes/TenArrows.vue'
 import PrizeModal from './components/prizes/PrizeModal.vue'
 import PrizePackModal from './components/prizes/packs/PrizePackModal.vue'
 
+import PrimeVue from 'primevue/config';
+import Aura from '@primevue/themes/aura';
+
+import Tabs from 'primevue/tabs';
+import TabList from 'primevue/tablist';
+import Tab from 'primevue/tab';
+import TabPanels from 'primevue/tabpanels';
+import TabPanel from 'primevue/tabpanel';
+
 const app = createApp(App)
+
+app.use(PrimeVue, {
+   theme: {
+       preset: Aura,
+       options: {
+         darkModeSelector: '.my-app-dark'
+       }
+   }
+});
 
 app.component('BlueRupeePack', BlueRupeePack)
    .component('FiveArrowsPack', FiveArrowsPack)
@@ -63,8 +77,16 @@ app.component('BlueRupeePack', BlueRupeePack)
    .component('PrizeModal', PrizeModal)
    .component('PrizePackModal', PrizePackModal)
 
-app.use(BootstrapVue3);
+app.component('Tabs', Tabs);
+app.component('TabList', TabList);
+app.component('Tab', Tab);
+app.component('TabPanels', TabPanels);
+app.component('TabPanel', TabPanel);
+
 app.use(createPinia())
 app.use(router)
 
 app.mount('#app')
+
+let element = document.querySelector('html');
+element!.classList.toggle('my-app-dark');

@@ -11,7 +11,7 @@ function startTracking() {
 </script>
 
 <template>
-  <header v-if="$route.name != 'track' && $route.name != 'tree'">
+  <header v-if="router.currentRoute.value.name != 'track' && router.currentRoute.value.name != 'tree'">
     <img alt="Vue logo" class="logo" src="@/assets/link_too_many_items.jpg" width="200" />
 
     <div class="wrapper">
