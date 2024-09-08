@@ -66,10 +66,10 @@
                 </div>
 
                 <div class="col">
-                  <p>Tree south of the lumberjacks</p>
+                  <p>Eastern Palace</p>
                   <img src="@/assets/trees/ep.png" />
                   
-                  <p>Hyrule Castle Garden</p>
+                  <p>Swamp near fairy cave</p>
                   <img src="@/assets/trees/swamp.png" />
                 </div>
               </div>
