@@ -378,6 +378,12 @@ body {
 }
 
 /*********************/
+.Moblin {
+  width: 16px;
+  height: 28px;
+  background-position: 0px -2px;
+}
+
 .BlueSwordGuard {
   width: 22px;
   height: 33px;

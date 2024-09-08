@@ -8,6 +8,7 @@
         <div class="icon GreenDaggerGuard"></div>
         <div class="icon RedSpearShieldGuard"></div>
         <div class="icon GreenSpearGuard"></div>
+        <div class="icon Moblin"></div>
         <div class="icon SkeletalWizzrobe"></div>
         <div class="icon Wizzrobe"></div>
         <div class="icon GreenLeever"></div>
