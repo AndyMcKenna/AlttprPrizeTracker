@@ -15,7 +15,6 @@
         <div class="icon BushStal"></div>
         <div class="icon Crab"></div>
         <div class="icon GreenZirro"></div>
-        <div class="icon Moblin"></div>
         <div class="icon PurpleLeever"></div>
         <div class="icon QuakeSlime"></div>
         <div class="icon Snake"></div>

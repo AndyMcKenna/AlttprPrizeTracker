@@ -5,6 +5,10 @@
   <main>
     <div id="changelog">
       <h2>Changelog</h2>
+      <h3>9/10/24</h3>
+      <ul>
+        <li>Moblin was actually not missing before, the duplicate has been removed</li>
+      </ul>
       <h3>9/8/24</h3>
       <ul>
         <li>Add the frozen hammer icon to pool #3 along with a hover tooltip</li>
