@@ -5,6 +5,11 @@
   <main>
     <div id="changelog">
       <h2>Changelog</h2>
+      <h3>9/14/24</h3>
+      <ul>
+        <li>Fixed the prize selections allowing you to click and open multiple windows without making a selection first.</li>
+        <li>The single bomb wasn't showing up in the small magic prize pack.</li>
+      </ul>
       <h3>9/10/24</h3>
       <ul>
         <li>Moblin was actually not missing before, the duplicate has been removed</li>

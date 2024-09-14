@@ -178,14 +178,9 @@ body {
 }
 
 .PrizeModal {
-  position: fixed;
-  z-index: 999;
-  top: 20%;
-  left: 50%;
-  width: 182px;
-  margin-left: -110px;
   background-color: #000;
   border: 1px #ff0000 solid;
+  width: 182px;
 }
 
 .PrizeModal .Item {
@@ -214,15 +209,28 @@ body {
   margin-top: 15px;
 }
 
+.PrizeModal .p-dialog-header {
+  display: none;
+}
+
+.PrizeModal .p-dialog-content {
+  overflow: hidden;
+  padding: 0px;
+}
+
 .PrizePackModal {
-  position: fixed;
-  z-index: 999;
-  top: 10%;
-  left: 50%;
-  width: 212px;
-  margin-left: -110px;
   background-color: #000;
   border: 1px #ff0000 solid;
+  width: 210px;
+}
+
+.PrizePackModal .p-dialog-header {
+  display: none;
+}
+
+.PrizePackModal .p-dialog-content {
+  overflow: hidden;
+  padding: 0px;
 }
 
 .PrizePackModal .Item {

@@ -1,12 +1,10 @@
 <template>
-<div class="icon GreenRupee Selectable" @click="openModal = true"></div>
-<PrizeModal :open="openModal" :stateProperty="stateProperty" :propertyIndex="propertyIndex" />
+<div class="icon GreenRupee Selectable"></div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-
-const openModal = ref(false)
+import { usePrizeStore } from '@/stores/prize';
+const store = usePrizeStore();
 const props = defineProps({
   stateProperty: { type: String, required: true },
   propertyIndex: { type: Number, required: false }

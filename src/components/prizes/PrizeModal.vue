@@ -1,71 +1,48 @@
 <template>
-    <div v-if="open" class="PrizeModal">
-        <div class="Item" @click="setValue('GreenRupee')">
+    <Dialog v-model:visible="store.prizeModalIsOpen" modal class="PrizeModal">
+        <div class="Item" @click="store.setSinglePrize('GreenRupee')">
             <GreenRupee />
         </div>
-        <div class="Item" @click="setValue('BlueRupee')">
+        <div class="Item" @click="store.setSinglePrize('BlueRupee')">
             <BlueRupee />
         </div>
-        <div class="Item" @click="setValue('RedRupee')">
+        <div class="Item" @click="store.setSinglePrize('RedRupee')">
             <RedRupee />
         </div>
-        <div class="Item" @click="setValue('FiveArrows')">
+        <div class="Item" @click="store.setSinglePrize('FiveArrows')">
             <FiveArrows />
         </div>
-        <div class="Item" @click="setValue('TenArrows')">
+        <div class="Item" @click="store.setSinglePrize('TenArrows')">
             <TenArrows />
         </div>
-        <div class="Item" @click="setValue('Fairy')">
+        <div class="Item" @click="store.setSinglePrize('Fairy')">
             <Fairy />
         </div>
-        <div class="Item" @click="setValue('Heart')">
+        <div class="Item" @click="store.setSinglePrize('Heart')">
             <Heart />
         </div>
-        <div class="Item" @click="setValue('SmallMagic')">
+        <div class="Item" @click="store.setSinglePrize('SmallMagic')">
             <SmallMagic />
         </div>
-        <div class="Item" @click="setValue('FullMagic')">
+        <div class="Item" @click="store.setSinglePrize('FullMagic')">
             <FullMagic />
         </div>
-        <div class="Item" @click="setValue('SingleBomb')">
+        <div class="Item" @click="store.setSinglePrize('SingleBomb')">
             <SingleBomb />
         </div>
-        <div class="Item" @click="setValue('FourBombs')">
+        <div class="Item" @click="store.setSinglePrize('FourBombs')">
             <FourBombs />
         </div>
-        <div class="Item" @click="setValue('EightBombs')">
+        <div class="Item" @click="store.setSinglePrize('EightBombs')">
             <EightBombs />
         </div>
-    </div>
+    </Dialog>
 
 </template>
 
 <script setup lang="ts">
 import { usePrizeStore } from '@/stores/prize';
+import Dialog from 'primevue/dialog';
 
 const store = usePrizeStore();
-const props = defineProps({
-  open: { type: Boolean, required: true },
-  stateProperty: { type: String, required: true },
-  propertyIndex: { type: Number, required: false }
-});
-
-function setValue(newValue: String) {
-  if(props.stateProperty == "tree" && props.propertyIndex != null)
-  {
-    store.tree[props.propertyIndex] = newValue;
-  }
-  if(props.stateProperty == "bush" && props.propertyIndex != null)
-  {
-    store.bush[props.propertyIndex] = newValue;
-  }
-  if(props.stateProperty == "stun")
-  {
-    store.stun = newValue;
-  }
-  if(props.stateProperty == "fish")
-  {
-    store.fish = newValue;
-  }
-}
 </script>

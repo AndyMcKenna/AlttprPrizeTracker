@@ -22,8 +22,7 @@
       </div>      
       <div class="ItemPrize TwoLines Selectable" @click="store.openPrizePackModal(0)">
         <component :is="store.pools[0]"></component>
-      </div>      
-      <PrizePackModal :propertyIndex="Number(0)" />
+      </div>
     </div>
 
     <div class="TrackedItem">
@@ -49,7 +48,6 @@
       <div class="ItemPrize TwoLines Selectable" @click="store.openPrizePackModal(1)">
         <component :is="store.pools[1]"></component>
       </div>
-      <PrizePackModal :propertyIndex="Number(1)" />
     </div>
 
     <div class="TrackedItem">
@@ -63,7 +61,6 @@
       <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(2)">
         <component :is="store.pools[2]"></component>
       </div>
-      <PrizePackModal :propertyIndex="Number(2)" />
     </div>
 
     <div class="TrackedItem">
@@ -80,7 +77,6 @@
       <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(3)">
         <component :is="store.pools[3]"></component>
       </div>
-      <PrizePackModal :propertyIndex="Number(3)" />
     </div>
 
     <div class="TrackedItem">
@@ -96,7 +92,6 @@
       <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(4)">
         <component :is="store.pools[4]"></component>
       </div>
-      <PrizePackModal :propertyIndex="Number(4)" />
     </div>
 
     <div class="TrackedItem">
@@ -120,7 +115,6 @@
       <div class="ItemPrize TwoLines Selectable" @click="store.openPrizePackModal(5)">
         <component :is="store.pools[5]"></component>
       </div>
-      <PrizePackModal :propertyIndex="Number(5)" />
     </div>
 
     <div class="TrackedItem">
@@ -140,7 +134,6 @@
       <div class="ItemPrize OneLine Selectable" @click="store.openPrizePackModal(6)">
         <component :is="store.pools[6]"></component>
       </div>
-      <PrizePackModal :propertyIndex="Number(6)" />
     </div>
 
     <div class="TrackedItem Smaller">
@@ -148,9 +141,9 @@
         <div class="icon Tree" @click="viewTreeGuide()" title="View Tree Pull Locations"></div>
       </div>
       <div class="ItemPrize OneLine">
-        <component :is="store.tree[0]" stateProperty="tree" :propertyIndex="Number(0)"></component>
-        <component :is="store.tree[1]" stateProperty="tree" :propertyIndex="Number(1)"></component>
-        <component :is="store.tree[2]" stateProperty="tree" :propertyIndex="Number(2)"></component>
+        <component :is="store.tree[0]" @click="store.openPrizeModal('tree', 0)"></component>
+        <component :is="store.tree[1]" @click="store.openPrizeModal('tree', 1)"></component>
+        <component :is="store.tree[2]" @click="store.openPrizeModal('tree', 2)"></component>
       </div>
     </div>
 
@@ -161,7 +154,7 @@
         <div class="icon Hookshot"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <component :is="store.stun" stateProperty="stun"></component>
+        <component :is="store.stun" @click="store.openPrizeModal('stun')"></component>
       </div>
     </div>
     
@@ -170,8 +163,8 @@
         <div class="icon BushCrab"></div>
       </div>
       <div class="ItemPrize OneLine">
-        <component :is="store.bush[0]" stateProperty="bush" :propertyIndex="Number(0)"></component>
-        <component :is="store.bush[1]" stateProperty="bush" :propertyIndex="Number(1)"></component>
+        <component :is="store.bush[0]" @click="store.openPrizeModal('bush', 0)"></component>
+        <component :is="store.bush[1]" @click="store.openPrizeModal('bush', 1)"></component>
       </div>
     </div>
 
@@ -180,14 +173,19 @@
         <div class="icon Fish"></div>
       </div>
       <div class="ItemPrize OneLine Selectable">
-        <component :is="store.fish" stateProperty="fish"></component>
+        <component :is="store.fish" @click="store.openPrizeModal('fish')"></component>
       </div>
     </div>
+
+    <PrizePackModal />
+    <PrizeModal />
 </template>
 
 <script setup lang="ts">
 import { usePrizeStore } from '@/stores/prize';
 import router from '../router/index'
+import PrizeModal from '@/components/prizes/PrizeModal.vue';
+import PrizePackModal from '@/components/prizes/packs/PrizePackModal.vue';
 
 const store = usePrizeStore();
 document.title = "Prize Tracker";

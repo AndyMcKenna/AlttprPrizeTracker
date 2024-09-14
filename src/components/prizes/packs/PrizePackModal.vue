@@ -1,44 +1,36 @@
 <template>
-    <div v-if="store.prizePackModalIsOpen[props.propertyIndex]" class="PrizePackModal">
-        <div class="Item" @click="setValue('BlueRupeePack')">
+    <Dialog v-model:visible="store.prizePackModalIsOpen" modal class="PrizePackModal">
+        <div class="Item" @click="store.setPrizePack('BlueRupeePack')">
             <BlueRupeePack />
         </div>
-        <div class="Item" @click="setValue('FiveArrowsPack')">
+        <div class="Item" @click="store.setPrizePack('FiveArrowsPack')">
             <FiveArrowsPack />
         </div>
-        <div class="Item" @click="setValue('FullMagicPack')">
+        <div class="Item" @click="store.setPrizePack('FullMagicPack')">
             <FullMagicPack />
         </div>
-        <div class="Item" @click="setValue('HeartFairyPack')">
+        <div class="Item" @click="store.setPrizePack('HeartFairyPack')">
             <HeartFairyPack />
         </div>
-        <div class="Item" @click="setValue('HeartHeartPack')">
+        <div class="Item" @click="store.setPrizePack('HeartHeartPack')">
             <HeartHeartPack />
         </div>
-        <div class="Item" @click="setValue('SingleBombPack')">
+        <div class="Item" @click="store.setPrizePack('SingleBombPack')">
             <SingleBombPack />
         </div>
-        <div class="Item" @click="setValue('SmallMagicPack')">
+        <div class="Item" @click="store.setPrizePack('SmallMagicPack')">
             <SmallMagicPack />
         </div>
-        <div class="Item" @click="setValue('QuestionPack')">
+        <div class="Item" @click="store.setPrizePack('QuestionPack')">
             <QuestionPack />
         </div>
-    </div>
+    </Dialog>
 
 </template>
 
 <script setup lang="ts">
 import { usePrizeStore } from '@/stores/prize';
+import Dialog from 'primevue/dialog';
 
 const store = usePrizeStore();
-const props = defineProps({
-  propertyIndex: { type: Number, required: true }
-});
-
-function setValue(pack: String) {
-    store.pools[props.propertyIndex] = pack;
-    store.prizePackModalIsOpen[props.propertyIndex] = false;
-}
-
 </script>
