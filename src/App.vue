@@ -8,6 +8,20 @@ function startTracking() {
   const routeData = router.resolve({name: 'track'});
   window.open(routeData.href, '_blank', 'popup,width=480,height=700');
 }
+
+function startTrackingVanilla() {
+  const routeData = router.resolve({
+    name: 'track',
+    query: {
+      pools: 'HeartHeartPack,BlueRupeePack,FullMagicPack,SingleBombPack,FiveArrowsPack,SmallMagicPack,HeartFairyPack',
+      tree: 'GreeRupee,BlueRupee,RedRupee',
+      stun: 'GreenRupee',
+      bush: 'GreenRupee,RedRupee',
+      fish: 'RedRupee'
+    }
+  });
+  window.open(routeData.href, '_blank', 'popup,width=480,height=700');
+}
 </script>
 
 <template>
@@ -20,7 +34,8 @@ function startTracking() {
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>        
-        <a @click="startTracking()" href="#">Track</a>
+        <a @click="startTracking()" href="#">Track Random</a>
+        <a @click="startTrackingVanilla()" href="#">Track Vanilla</a>
       </nav>
     </div>
   </header>

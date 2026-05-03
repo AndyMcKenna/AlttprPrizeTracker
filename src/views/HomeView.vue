@@ -5,6 +5,11 @@
   <main>
     <div id="changelog">
       <h2>Changelog</h2>
+      <h3>5/3/25</h3>
+      <ul>
+        <li>Added a "Track Vanilla" option that opens the tracker pre-configured with the standard vanilla prize pack distribution.</li>
+        <li>Added automated unit and end-to-end tests to catch regressions.</li>
+      </ul>
       <h3>9/14/24</h3>
       <ul>
         <li>Fixed the prize selections allowing you to click and open multiple windows without making a selection first.</li>
