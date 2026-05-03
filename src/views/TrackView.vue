@@ -184,11 +184,19 @@
 <script setup lang="ts">
 import { usePrizeStore } from '@/stores/prize';
 import router from '../router/index'
+import { useRoute } from 'vue-router'
 import PrizeModal from '@/components/prizes/PrizeModal.vue';
 import PrizePackModal from '@/components/prizes/packs/PrizePackModal.vue';
 
 const store = usePrizeStore();
 document.title = "Prize Tracker";
+
+const route = useRoute();
+if (route.query.pools) store.pools = (route.query.pools as string).split(',');
+if (route.query.tree) store.tree = (route.query.tree as string).split(',');
+if (route.query.bush) store.bush = (route.query.bush as string).split(',');
+if (route.query.stun) store.stun = route.query.stun as string;
+if (route.query.fish) store.fish = route.query.fish as string;
 
 function viewTreeGuide() {
   const routeData = router.resolve({name: 'tree'});
