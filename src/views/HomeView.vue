@@ -5,7 +5,7 @@
   <main>
     <div id="changelog">
       <h2>Changelog</h2>
-      <h3>5/3/25</h3>
+      <h3>5/3/26</h3>
       <ul>
         <li>Added a "Track Vanilla" option that opens the tracker pre-configured with the standard vanilla prize pack distribution.</li>
         <li>Added automated unit and end-to-end tests to catch regressions.</li>
